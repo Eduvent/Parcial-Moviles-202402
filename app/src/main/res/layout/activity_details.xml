@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutDetails"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvSourceName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Source Name"
+            style="@style/LargeTextStyle" />
+
+        <ImageView
+            android:id="@+id/ivDetailImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:contentDescription="@string/news_image"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/ic_placeholder"
+            android:elevation="4dp" />
+
+        <TextView
+            android:id="@+id/tvContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Content"
+            style="@style/NormalTextStyle" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end"
+            android:layout_marginTop="16dp">
+
+            <Button
+                android:id="@+id/btnOpenWeb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Open Web"
+                style="@style/CustomButtonStyle" />
+
+            <Button
+                android:id="@+id/btnAddFavorite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add to Favorites"
+                style="@style/CustomButtonStyle"
+                android:layout_marginStart="16dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
